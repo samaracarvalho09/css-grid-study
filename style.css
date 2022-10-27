@@ -1,0 +1,61 @@
+* { padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.item-header {
+    background-color: rgb(102, 191, 233);
+    grid-area: header;
+}
+
+.item-hero {
+    background-color:rgb(220, 170, 230);
+    grid-area: hero;
+}
+
+.item-main-content {
+    background-color: rgb(236, 225, 62);
+    grid-area: main;
+}
+
+.item-slide-bar{
+    background-color: rgb(137, 179, 95);
+    grid-area: slide;
+}
+
+.item-extra-content {
+    background-color: rgb(122, 120, 120);
+    grid-area: extra;
+}
+
+.item-related-images {
+    background-color: rgb(14, 190, 132);
+    grid-area: images;
+}
+
+.item-related-posts {
+    background-color: rgb(243, 188, 238);
+    grid-area: posts;
+}
+
+.item-footer {
+    background-color: rgb(230, 118, 44);
+    grid-area: footer;
+}
+
+.container {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 25vh 35vh 20vh 10vh;
+    grid-template-areas: "header header header header header header"
+                         "hero main main main main main"
+                         "slide main main main main main"
+                         "slide extra extra extra extra extra"
+                         "images images images images images posts" 
+                         "footer footer footer footer footer footer";
+}
